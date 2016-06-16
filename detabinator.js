@@ -34,15 +34,15 @@ class Detabinator {
       if (isInert) {
         // If the child has an explict tabindex save it
         if (child.hasAttribute('tabindex')) {
-          child.__savedTabindex = child.tabIndex;
+          child.__savedTabIndex = child.tabIndex;
         }
         // Set ALL focusable children to tabindex -1
         child.setAttribute('tabindex', -1);
       } else {
         // If the child has a saved tabindex, restore it
         // Because the value could be 0, explicitly check that it's not false
-        if (child.__savedTabindex === 0 || child.__savedTabindex) {
-          return child.setAttribute('tabindex', child.__savedTabindex);
+        if (child.__savedTabIndex === 0 || child.__savedTabIndex) {
+          return child.setAttribute('tabindex', child.__savedTabIndex);
         } else {
           // Remove tabindex from ANY REMAINING children
           child.removeAttribute('tabindex');
