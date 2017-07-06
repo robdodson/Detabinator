@@ -1,5 +1,9 @@
 # Detabinator
 
+## Work is now underway to standardize the inert attribute/property. This does everything Detabinator does and more! Check it out at [WICG/inert](https://github.com/WICG/inert).
+
+## ⚠️ Deprecated ⚠️
+
 Toggle tabindex to -1 for an entire tree of children. Preserves existing
 `tabindex` on children if one is present.
 
